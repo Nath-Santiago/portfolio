@@ -1,6 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import ReactLogo from '../../sample.jpg';
 import Particles from 'react-tsparticles';
 
 export const Body = () => {
