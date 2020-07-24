@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import twitter from '../../assets/twitter.svg';
-import fb from '../../assets/fb.svg';
-import linkedin from '../../assets/linkedin.svg';
-import ig from '../../assets/ig.svg';
-import github from '../../assets/github.svg';
+// import twitter from '../../assets/twitter.svg';
+// import fb from '../../assets/fb.svg';
+// import linkedin from '../../assets/linkedin.svg';
+// import ig from '../../assets/ig.svg';
+// import github from '../../assets/github.svg';
 
 export const Footer = () => {
   return (

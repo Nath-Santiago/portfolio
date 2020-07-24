@@ -1,9 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import ReactLogo from '../../assets/logo.svg';
-// import AnchorLink from 'react-anchor-link-smooth-scroll';
-import * as Scroll from 'react-scroll';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export const NavBar = () => {
   return (
