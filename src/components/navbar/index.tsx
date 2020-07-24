@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import ReactLogo from '../../assets/logo.svg';
+// import ReactLogo from '../../assets/logo.svg';
 import { Link } from 'react-scroll';
 
 export const NavBar = () => {
@@ -8,7 +8,7 @@ export const NavBar = () => {
     <div id="navigation-bar">
       <Navbar sticky="top" fixed="top">
         <Navbar.Brand>
-          <img alt="" src={ReactLogo} width="50" height="50" />
+          {/* <img alt="" src={ReactLogo} width="50" height="50" /> */}
           <h3>Nathaniel Santiago</h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
