@@ -18,24 +18,24 @@ export const Portfolios = () => {
                     <Title title={'PORTFOLIOS'}></Title>
                     <Card.Body>
                       <Row>
-                        <Col lg={6} md={12}>
+                        <Col lg={12} xl={6}>
                           <div data-aos="flip-left" className="animation-div">
                             <img
                               src={gtmChart}
                               alt="gtm"
-                              width="450"
-                              height="500"
+                              width="90%"
+                              height="80%"
                             ></img>
                             <h3>Green Tiger Markets Trading Chart</h3>
                           </div>
                         </Col>
-                        <Col lg={6} md={12}>
+                        <Col lg={12} xl={6}>
                           <div data-aos="flip-right" className="animation-div">
                             <img
                               src={undp}
                               alt="undp"
-                              width="500"
-                              height="300"
+                              width="90%"
+                              height="80%"
                             ></img>
                             <h3>UNDP</h3>
                           </div>

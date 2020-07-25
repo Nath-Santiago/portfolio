@@ -6,10 +6,9 @@ import { Link } from 'react-scroll';
 export const NavBar = () => {
   return (
     <div id="navigation-bar">
-      <Navbar sticky="top" fixed="top">
+      <Navbar expand="md" sticky="top" fixed="top">
         <Navbar.Brand>
-          {/* <img alt="" src={ReactLogo} width="50" height="50" /> */}
-          <h3>Nathaniel Santiago</h3>
+          <span>Nathaniel Santiago</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
