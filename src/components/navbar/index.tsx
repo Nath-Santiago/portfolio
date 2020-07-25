@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-// import ReactLogo from '../../assets/logo.svg';
 import { Link } from 'react-scroll';
 
 export const NavBar = () => {
@@ -14,7 +13,18 @@ export const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
-            <Nav.Link>ABOUT</Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="about-me"
+                spy={true}
+                smooth={true}
+                offset={-75}
+                duration={1500}
+              >
+                ABOUT
+              </Link>
+            </Nav.Link>
             <Nav.Link>
               <Link
                 activeClass="active"

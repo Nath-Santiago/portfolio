@@ -7,19 +7,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 // import github from '../../assets/github.svg';
 
 export const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
     <div id="footer">
       <Container fluid>
         <Row>
           <Col lg={9}>
-            <h5>© All Right Reserved by Nathaniel Santiago</h5>
-          </Col>
-          <Col lg={3}>
-            {/* <img src={fb} width="30" height="30"></img>
-            <img src={twitter} width="30" height="30"></img>
-            <img src={ig} width="30" height="30"></img>
-            <img src={linkedin} width="30" height="30"></img>
-            <img src={github} width="30" height="30"></img> */}
+            <h5>© All Right Reserved by Nathaniel Santiago {year}</h5>
           </Col>
         </Row>
       </Container>

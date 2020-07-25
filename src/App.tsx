@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import { Portfolios } from './components/porfolios';
 import { ContactMe } from './components/contactme';
 import { Footer } from './components/footer/footer';
+import { AboutMe } from './components/aboutme';
 
 function App() {
   AOS.init();
@@ -17,6 +18,7 @@ function App() {
       <Container fluid className="main-container">
         <NavBar></NavBar>
         <Body></Body>
+        <AboutMe></AboutMe>
         <Skills></Skills>
         <Portfolios></Portfolios>
         <ContactMe></ContactMe>
