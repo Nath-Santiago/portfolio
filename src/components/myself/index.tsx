@@ -9,7 +9,7 @@ export const Body = () => {
     <div className="body-container">
       <div className="myself">
         <div className="picture-or-animation">
-          <img src={react} width={200} height={200}></img>
+          <img src={react} width={200} height={200} alt="imag"></img>
         </div>
         <div className="intro">
           <span className="job-description">Hi! I'm Nath</span>
