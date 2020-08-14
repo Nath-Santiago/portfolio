@@ -14,7 +14,7 @@ export const Footer = () => {
       <Container fluid>
         <Row>
           <Col lg={9}>
-            <h5>© All Right Reserved by Nathaniel Santiago {year}</h5>
+            <span>© All Right Reserved by Nathaniel Santiago {year}</span>
           </Col>
         </Row>
       </Container>

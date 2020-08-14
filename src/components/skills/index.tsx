@@ -21,8 +21,8 @@ export const Skills = () => {
   return (
     <div id="skills">
       <Element name="skills" className="element">
-        <Container fluid>
-          <div data-aos="fade-up">
+        <div data-aos="fade-up">
+          <Container fluid>
             <Row>
               <Col>
                 <div data-aos="fade-up">
@@ -61,12 +61,7 @@ export const Skills = () => {
                             data-aos="fade-down-left"
                             className="animation-div"
                           >
-                            <img
-                              src={js}
-                              alt="JS"
-                              width="200"
-                              height="200"
-                            ></img>
+                            <img src={js} alt="JS" width="200" height="200"></img>
                             <h3>JAVASCRIPT</h3>
                           </div>
                         </Col>
@@ -99,10 +94,7 @@ export const Skills = () => {
                       {/* third row */}
                       <Row>
                         <Col md={12} lg={4}>
-                          <div
-                            data-aos="fade-up-right"
-                            className="animation-div"
-                          >
+                          <div data-aos="fade-up-right" className="animation-div">
                             <img
                               src={redux}
                               alt="Redux"
@@ -124,10 +116,7 @@ export const Skills = () => {
                           </div>
                         </Col>
                         <Col md={12} lg={4}>
-                          <div
-                            data-aos="fade-up-left"
-                            className="animation-div"
-                          >
+                          <div data-aos="fade-up-left" className="animation-div">
                             <img
                               src={git}
                               alt="Git"
@@ -203,8 +192,8 @@ export const Skills = () => {
                 </div>
               </Col>
             </Row>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </Element>
     </div>
   );

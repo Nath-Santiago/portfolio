@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Title } from '../title';
-import gtmChart from '../../assets/gtm-chart2.png';
+import gtmChart from '../../assets/gtm-chart-3.png';
 import undp from '../../assets/undp.png';
 import { Element } from 'react-scroll';
 
@@ -9,8 +9,8 @@ export const Portfolios = () => {
   return (
     <div id="portfolios">
       <Element name="portfolios" className="element">
-        <Container fluid>
-          <div data-aos="fade-up">
+        <div data-aos="fade-up">
+          <Container fluid>
             <Row>
               <Col>
                 <div data-aos="fade-up">
@@ -46,8 +46,8 @@ export const Portfolios = () => {
                 </div>
               </Col>
             </Row>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </Element>
     </div>
   );

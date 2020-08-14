@@ -4,14 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
 
+// global
+.col {
+  padding: 0;
+}
+.animation-div .aos-init{
+  overflow: hidden;
+}
+// global
+
 .App {
   font-family: 'Titillium Web', sans-serif;
-  background: black;
-
+  font-size: 20px;
+  background: white;
+  width: 100%;
+  
+  .container {
+    padding: 0;
+  }
   .card {
-    background: #111111;
+    background: transparent;
     margin: 25px auto;
-    color: white;
+    color: #9000ff;
+    border: none;
   }
   .main-container {
     padding: 0;
@@ -20,33 +35,32 @@
       position: sticky;
       top: 0;
       z-index: 10000;
-      background: #111111;
+      background: #fff;
       .navbar-light {
         .navbar-toggler {
-          color: white;
+          color: #9000ff;
           border: none;
         }
         .navbar-toggler-icon {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='purple' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
       }
       nav {
         width: 100%;
         display: flex;
-        box-shadow: 0px 5px 19px 2px rgba(0, 0, 0, 0.75);
+        // box-shadow: 0px 5px 19px 2px rgba(0, 0, 0, 0.75);
         .navbar-brand {
           display: flex;
-          padding: 0px 32px;
           span {
             font-weight: 700;
             font-size: 1.5625rem;
-            color: white;
+            color: #9000ff;
             margin: 0;
           }
         }
         a {
           font-weight: 700;
-          color: #ffffff;
+          color: #9000ff;
         }
         a.active {
           opacity: 1;
@@ -57,11 +71,43 @@
     }
     .body-container {
       width: 100%;
-      height: 25%;
+      height: 830px;
       overflow: hidden;
+      .myself {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        .picture-or-animation,
+        .type-animation,
+        .intro {
+          margin: 0 auto;
+        }
+        .job-description {
+          font-weight: 700;
+          font-size: 2rem;
+        }
+      }
+      .particles {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #tsparticles{
+          position: relative;
+          height: 100%;
+        }
+        .atup{
+          position: relative;
+          height: 100%;
+        }
+      }
     }
     #about-me {
+      background: #9000ff;
       .card {
+        color: white;
         .row {
           display: flex;
           justify-content: center;
@@ -73,9 +119,11 @@
               width: 100%;
             }
             .message {
-              font-size: 20px;
               text-align: justify;
               line-height: 1.6;
+              a {
+                color: #00e7ff;
+              }
             }
           }
         }
@@ -83,6 +131,7 @@
     }
     #skills {
       .card {
+        color: #000;
         .row {
           padding: 10px 0px;
           display: flex;
@@ -100,7 +149,7 @@
           justify-content: center;
           .animation-div {
             img {
-              opacity: 0.4;
+              filter: brightness(75%);
               -webkit-animation-duration: 1s;
               animation-duration: 1s;
               -webkit-animation-fill-mode: both;
@@ -111,7 +160,7 @@
               -webkit-animation-iteration-count: 1;
             }
             img:hover {
-              opacity: 1;
+              filter: brightness(100%);
               cursor: pointer;
               animation-name: bounce;
               -moz-animation-name: bounce;
@@ -128,6 +177,7 @@
       height: auto;
       width: 100%;
       .card {
+        color: #000;
         .row {
           padding: 10px 0px;
         }
@@ -148,7 +198,7 @@
             align-items: center;
             flex-direction: column;
             img {
-              border: 10px white solid;
+              border: 10px #9000ff solid;
               border-radius: 5px;
               -webkit-animation-duration: 1s;
               animation-duration: 1s;
@@ -178,19 +228,25 @@
       .card {
         margin-bottom: 100px;
         padding-bottom: 16px;
+        color: #000;
         .row {
           display: flex;
           justify-content: center;
         }
         .form-control {
-          background: #111111;
-          color: white;
+          background: transparent;
+          border: 1.5px solid #7510f7;
+          color: #000;
           border-radius: 5px;
         }
         button {
-          border: 1.5px whitesmoke solid;
-          color: whitesmoke;
+          border: 1.5px #9000ff solid;
+          color: #9000ff;
           background: transparent;
+        }
+        button:hover {
+          background: #9000ff;
+          color: #fff;
         }
         textarea {
           resize: none;
@@ -205,17 +261,11 @@
         .col-lg-9 {
           display: flex;
           justify-content: center;
-          h5 {
-            color: white;
+          span {
+            color: #9000ff;
           }
         }
       }
-    }
-
-    // unnecessary
-    .filler {
-      height: 1000px;
-      width: 100px;
     }
   }
   .title {

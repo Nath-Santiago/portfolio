@@ -7,8 +7,8 @@ export const ContactMe = () => {
   return (
     <div id="contact-me">
       <Element name="contact-me" className="element">
-        <Container fluid>
-          <div data-aos="fade-up">
+        <div data-aos="fade-up">
+          <Container fluid>
             <Row>
               <Col>
                 <div data-aos="fade-up">
@@ -28,9 +28,9 @@ export const ContactMe = () => {
                                 <Form.Label>Full Name</Form.Label>
                                 <Form.Control type="text" />
                                 <Form.Text className="text-muted">
-                                  Don't worry I will not share your
-                                  informations. Your secret is safe with me.
-                                </Form.Text>
+                                  Don't worry I will not share your informations.
+                                  Your secret is safe with me.
+                              </Form.Text>
                               </Form.Group>
                               <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Message</Form.Label>
@@ -39,7 +39,7 @@ export const ContactMe = () => {
 
                               <Button variant="primary" type="submit">
                                 Send Me A Message
-                              </Button>
+                            </Button>
                             </Form>
                           </div>
                         </Col>
@@ -49,8 +49,8 @@ export const ContactMe = () => {
                 </div>
               </Col>
             </Row>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </Element>
     </div>
   );
