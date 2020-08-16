@@ -26,6 +26,11 @@ export const Portfolios = () => {
                               width="90%"
                               height="80%"
                             ></img>
+                            <a href="https://www.greentigermarkets.com/market-data.html">
+                              <div className="middle">
+                                <div className="text">Click Here</div>
+                              </div>
+                            </a>
                             <h3>Green Tiger Markets Trading Chart</h3>
                           </div>
                         </Col>
@@ -37,6 +42,11 @@ export const Portfolios = () => {
                               width="90%"
                               height="80%"
                             ></img>
+                            <a href="https://console.devlive.org/">
+                              <div className="middle">
+                                <div className="text">Click Here</div>
+                              </div>
+                            </a>
                             <h3>UNDP</h3>
                           </div>
                         </Col>

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Particles from 'react-tsparticles';
 import Typing from 'react-typing-animation';
-import react from '../../assets/react.svg';
+import myPortrait from '../../assets/portrait.svg';
 
 export const Body = () => {
   const [jobDesc, setJobDesc] = useState('Software Engineer');
   return (
     <div className="body-container">
       <div className="myself">
-        <div className="picture-or-animation">
-          <img src={react} width={200} height={200} alt="imag"></img>
+        <div className="my-portrait">
+          <img src={myPortrait} alt="portrait"></img>
         </div>
         <div className="intro">
           <span className="job-description">Hi! I'm Nath</span>
