@@ -1,13 +1,15 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import nathLogo from '../../assets/nathLogo.svg';
 
 export const NavBar = () => {
   return (
     <div id="navigation-bar">
       <Navbar expand="md" sticky="top" fixed="top">
         <Navbar.Brand>
-          <span>Nathaniel Santiago</span>
+          <img alt="my-logo" src={nathLogo} />
+          <span className="hide-on-small">Nathaniel Santiago</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
