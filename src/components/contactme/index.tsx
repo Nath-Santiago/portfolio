@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Card, Row, Col, Form, Button } from 'react-bootstrap';
 import { Title } from '../title';
 import { Element } from 'react-scroll';
-import { Formik, ErrorMessage } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
 import sendgrid from '@sendgrid/mail';
 import './styles.scss';
