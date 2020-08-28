@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Title } from '../title';
 import { Element } from 'react-scroll';
-// import gradpic from '../../assets/gradpic.jpg';
+import './styles.scss';
 
 export const AboutMe = () => {
   return (

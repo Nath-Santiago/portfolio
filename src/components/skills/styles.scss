@@ -1,0 +1,47 @@
+@import '../../assets/styles/colors.scss';
+
+#skills {
+    .card {
+      color: $black900;
+      .row {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+      }
+      .col-md-12 {
+        .animation-div {
+          padding: 10px 0px;
+        }
+      }
+      .col-md-12,
+      .col-lg-3,
+      .col-lg-6 {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        .animation-div {
+          img {
+            filter: brightness(75%);
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            -webkit-animation-iteration-count: 1;
+          }
+          img:hover {
+            filter: brightness(100%);
+            cursor: pointer;
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+          h3 {
+            text-align: center;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }

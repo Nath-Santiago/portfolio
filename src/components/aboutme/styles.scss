@@ -1,0 +1,28 @@
+@import  '../../assets/styles/colors.scss';
+
+#about-me {
+    background: $primary-theme-color-hex;
+    .card {
+      color: $white900;
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .col-10 {
+          overflow: hidden;
+          .introductory {
+            font-size: 36px;
+            font-weight: 700;
+            width: 100%;
+          }
+          .message {
+            text-align: justify;
+            line-height: 1.6;
+            a {
+              color: $link-color;
+            }
+          }
+        }
+      }
+    }
+  }

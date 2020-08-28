@@ -1,0 +1,33 @@
+@import '../../assets/styles/colors.scss';
+
+#contact-me {
+    height: auto;
+    width: 100%;
+    .card {
+      margin-bottom: 100px;
+      padding-bottom: 16px;
+      color: $black900;
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+      .form-control {
+        background: transparent;
+        border: 1.5px solid $primary-theme-color-hex;
+        color: $black900;;
+        border-radius: 5px;
+      }
+      button {
+        border: 1.5px $primary-theme-color-hex solid;
+        color: $primary-theme-color-hex;
+        background: transparent;
+      }
+      button:hover {
+        background: $primary-theme-color-hex;
+        color: $white900;
+      }
+      textarea {
+        resize: none;
+      }
+    }
+  }

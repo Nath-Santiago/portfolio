@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import { Title } from '../title';
-import gtmChart from '../../assets/gtm-chart-3.png';
-import undp from '../../assets/undp.png';
+import gtmChart from '../../assets/pictures/gtm-chart-3.png';
+import undp from '../../assets/pictures/undp.png';
 import { Element } from 'react-scroll';
+import './styles.scss';
 
 export const Portfolios = () => {
   return (

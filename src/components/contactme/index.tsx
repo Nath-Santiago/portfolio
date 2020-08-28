@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Card, Row, Col, Form, Button } from 'react-bootstrap';
 import { Title } from '../title';
 import { Element } from 'react-scroll';
+import './styles.scss';
 
 export const ContactMe = () => {
   return (

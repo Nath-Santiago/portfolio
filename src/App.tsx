@@ -15,7 +15,7 @@ function App() {
   AOS.init();
   return (
     <div className="App">
-      <Container fluid className="main-container">
+      {/* <Container fluid className="main-container"> */}
         <NavBar></NavBar>
         <Body></Body>
         <AboutMe></AboutMe>
@@ -23,7 +23,7 @@ function App() {
         <Portfolios></Portfolios>
         <ContactMe></ContactMe>
         <Footer></Footer>
-      </Container>
+      {/* </Container> */}
     </div>
   );
 }

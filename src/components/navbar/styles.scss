@@ -1,0 +1,51 @@
+@import '../../assets/styles/colors.scss';
+
+#navigation-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background: $white900;
+    .navbar-light {
+      .navbar-toggler {
+        color: $primary-theme-color-hex;
+        border: none;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(144, 0, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      // box-shadow: 0px 5px 19px 2px rgba(0, 0, 0, 0.75);
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 425px) {
+          .hide-on-small {
+            display: none;
+          }
+        }
+        img {
+          margin: 0px 8px;
+          width: 45px;
+          height: 45px;
+        }
+        span {
+          font-weight: 700;
+          font-size: 1.5625rem;
+          color: $primary-theme-color-hex;
+          margin: 0;
+        }
+      }
+      a {
+        font-weight: 700;
+        color: $primary-theme-color-hex;
+      }
+      a.active {
+        opacity: 1;
+        font-weight: 900;
+        font-size: 20px;
+      }
+    }
+  }

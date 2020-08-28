@@ -1,7 +1,8 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import nathLogo from '../../assets/nathLogo.svg';
+import nathLogo from '../../assets/icons/nathLogo.svg';
+import './styles.scss';
 
 export const NavBar = () => {
   return (

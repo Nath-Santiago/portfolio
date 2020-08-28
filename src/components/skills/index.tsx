@@ -1,19 +1,20 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import html5 from '../../assets/html5.svg';
-import css5 from '../../assets/css3.svg';
-import js from '../../assets/javascript.svg';
-import angular from '../../assets/angular.svg';
-import react from '../../assets/react.svg';
-import graphql from '../../assets/graphql.svg';
-import redux from '../../assets/redux.svg';
-import node from '../../assets/nodejs-icon.svg';
-import git from '../../assets/git.svg';
-import gcp from '../../assets/gcp.svg';
-import aws from '../../assets/aws.svg';
-import photoshop from '../../assets/photoshop.svg';
-import postgresql from '../../assets/postgresql.svg';
+import html5 from '../../assets/icons/html5.svg';
+import css5 from '../../assets/icons/css3.svg';
+import js from '../../assets/icons/javascript.svg';
+import angular from '../../assets/icons/angular.svg';
+import react from '../../assets/icons/react.svg';
+import graphql from '../../assets/icons/graphql.svg';
+import redux from '../../assets/icons/redux.svg';
+import node from '../../assets/icons/nodejs-icon.svg';
+import git from '../../assets/icons/git.svg';
+import gcp from '../../assets/icons/gcp.svg';
+import aws from '../../assets/icons/aws.svg';
+import photoshop from '../../assets/icons/photoshop.svg';
+import postgresql from '../../assets/icons/postgresql.svg';
 import { Element } from 'react-scroll';
+import './styles.scss';
 
 import { Title } from '../title';
 

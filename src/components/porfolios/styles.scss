@@ -1,0 +1,80 @@
+@import '../../assets/styles/colors.scss';
+
+#portfolios {
+    height: auto;
+    width: 100%;
+    .card {
+      color: $black900;
+      .row {
+        padding: 10px 0px;
+      }
+      .col-xl-6 {
+        .animation-div {
+          padding: 10px 0px;
+        }
+      }
+      .col-lg-12,
+      .col-xl-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .animation-div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          img {
+            border: 8px $primary-theme-color-hex solid;
+            border-radius: 5px;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            -webkit-animation-iteration-count: 1;
+            transition: 0.5s ease;
+          }
+          .middle {
+            cursor: pointer;
+            transition: 0.5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          .text {
+            background-color: $primary-theme-color-hex;
+            border-radius: 3px;
+            color: $white900;
+            font-size: 16px;
+            padding: 16px;
+          }
+          img:hover {
+            cursor: pointer;
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+          }
+          h3 {
+            text-align: center;
+            font-weight: 700;
+          }
+        }
+
+        .animation-div:hover {
+          img {
+            filter: brightness(50%);
+          }
+          .middle {
+            opacity: 1;
+            z-index: 50000;
+          }
+        }
+      }
+    }
+  }

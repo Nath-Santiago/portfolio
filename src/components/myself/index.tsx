@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Particles from 'react-tsparticles';
 import Typing from 'react-typing-animation';
-import myPortrait from '../../assets/portrait.svg';
+import myPortrait from '../../assets/icons/portrait.svg';
+import './styles.scss';
 
 export const Body = () => {
   const [jobDesc, setJobDesc] = useState('Software Engineer');
   return (
-    <div className="body-container">
+    <div id="body-container">
       <div className="myself">
         <div className="my-portrait">
           <img src={myPortrait} alt="portrait"></img>
@@ -31,14 +32,13 @@ export const Body = () => {
       <div className="particles">
         <Particles
           height="100"
-          canvasClassName="atup"
           options={{
             fpsLimit: 60,
             interactivity: {
               detectsOn: 'canvas',
               events: {
                 onClick: {
-                  enable: true,
+                  enable: false,
                   mode: 'push',
                 },
                 onHover: {
@@ -52,13 +52,13 @@ export const Body = () => {
                   distance: 800,
                   duration: 2,
                   opacity: 0.8,
-                  size: 40,
+                  size: 6,
                 },
                 push: {
                   quantity: 4,
                 },
                 repulse: {
-                  distance: 200,
+                  distance: 100,
                   duration: 0.4,
                 },
               },
@@ -70,7 +70,7 @@ export const Body = () => {
               links: {
                 color: '#9000ff',
                 distance: 150,
-                enable: true,
+                enable: false,
                 opacity: 0.5,
                 width: 1,
               },
@@ -81,7 +81,7 @@ export const Body = () => {
                 direction: 'none',
                 enable: true,
                 outMode: 'bounce',
-                random: false,
+                random: true,
                 speed: 4,
                 straight: false,
               },
@@ -90,17 +90,17 @@ export const Body = () => {
                   enable: true,
                   value_area: 800,
                 },
-                value: 60,
+                value: 40,
               },
               opacity: {
                 value: 0.5,
               },
               shape: {
-                type: 'circle',
+                type: ["circle", "square", "triangle"]
               },
               size: {
                 random: true,
-                value: 5,
+                value: 10,
               },
             },
             detectRetina: true,
