@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sendgrid/mail": "^7.2.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.0",
+    "formik": "^2.1.5",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
@@ -18,7 +20,8 @@
     "react-tsparticles": "^1.17.3",
     "react-typing-animation": "^1.6.2",
     "typescript": "^3.9.7",
-    "websocket-extensions": "^0.1.4"
+    "websocket-extensions": "^0.1.4",
+    "yup": "^0.29.3"
   },
   "scripts": {
     "start": "react-scripts start",
