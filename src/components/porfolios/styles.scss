@@ -25,7 +25,7 @@
           flex-direction: column;
           position: relative;
           img {
-            border: 8px $primary-theme-color-hex solid;
+            border: 4px $primary-theme-color-hex solid;
             border-radius: 5px;
             -webkit-animation-duration: 1s;
             animation-duration: 1s;
@@ -49,11 +49,16 @@
             text-align: center;
           }
           .text {
-            background-color: $primary-theme-color-hex;
+            // background-color: $primary-theme-color-hex;
             border-radius: 3px;
-            color: $white900;
-            font-size: 16px;
+            color:$primary-theme-color-hex;
+            opacity: .8;
+            font-size: 32px;
+            font-weight: 700;
             padding: 16px;
+            width: 150px;
+            text-shadow: 5px 5px 10px black;
+            position: absolute;
           }
           img:hover {
             cursor: pointer;
@@ -65,14 +70,33 @@
             font-weight: 700;
           }
         }
-
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .text { visibility: hidden;}
+        }
         .animation-div:hover {
           img {
-            filter: brightness(50%);
+            // filter: brightness(50%);
           }
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text { 
+              text-align: center;
+              animation-name: bounce;
+              -moz-animation-name: bounce;
+              visibility: visible;
+            }
+          }
+      
           .middle {
             opacity: 1;
             z-index: 50000;
+            animation-name: bounce;
+            -moz-animation-name: bounce;
           }
         }
       }
