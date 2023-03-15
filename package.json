@@ -19,6 +19,7 @@
     "react-tooltip": "^4.2.7",
     "react-tsparticles": "^1.17.3",
     "react-typing-animation": "^1.6.2",
+    "sendclean": "^1.0.2",
     "typescript": "^3.9.7",
     "websocket-extensions": "^0.1.4",
     "yup": "^0.29.3"
