@@ -10030,11 +10030,6 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-sendclean@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/sendclean/-/sendclean-1.0.2.tgz#59371e8b510310fb63ad1a1ee8f6da83e4bfdc86"
-  integrity sha512-c/OZsVv1Aw6pS2EzGgw3hGNuK9jbFOPjDPS+FFWkd3ce0ec04aYYYBNFeuYZGcNp2uNT1H7UYYO8htEsCuYMww==
-
 serialize-javascript@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-2.1.2.tgz#ecec53b0e0317bdc95ef76ab7074b7384785fa61"

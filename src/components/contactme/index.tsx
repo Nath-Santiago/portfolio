@@ -59,15 +59,15 @@ export const ContactMe = () => {
   //  }
 
   // https://us1-mta1.sendclean.net/
-  const sendMailv2 = async (formValues: FormFields) => {
-    const sendclean_client = new SendClean({
-      token: "gCt3TxNc84wGTj73IuHNMPT1",
-      owner_id: "28779705",
-    });
-    sendclean_client.getUserInfo().then((userinfo) => {
-      console.log(userinfo);
-    });
-  };
+  // const sendMailv2 = async (formValues: FormFields) => {
+  //   const sendclean_client = new SendClean({
+  //     token: "gCt3TxNc84wGTj73IuHNMPT1",
+  //     owner_id: "28779705",
+  //   });
+  //   sendclean_client.getUserInfo().then((userinfo) => {
+  //     console.log(userinfo);
+  //   });
+  // };
 
   return (
     <div id="contact-me">
