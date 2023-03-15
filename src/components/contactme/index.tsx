@@ -5,7 +5,6 @@ import { Element } from "react-scroll";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import sendgrid from "@sendgrid/mail";
-import { SendClean } from "sendclean";
 import "./styles.scss";
 import { sendgridApiKey, emailTemplateId } from "../../assets/keys/sendgrid";
 
