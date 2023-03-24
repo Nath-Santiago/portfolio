@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import { Title } from "../title";
 import gtmChart from "../../assets/pictures/gtm-chart-3.png";
+import gtmPlatform from "../../assets/pictures/gtm-trading-platform.png";
 import undp from "../../assets/pictures/undp.png";
 import { Element } from "react-scroll";
 import "./styles.scss";
@@ -19,7 +20,7 @@ export const Portfolios = () => {
                     <Title title={"PORTFOLIOS"}></Title>
                     <Card.Body>
                       <Row>
-                        <Col lg={12} xl={6}>
+                        <Col lg={12} xl={12}>
                           <div data-aos="flip-left" className="animation-div">
                             <img
                               src={gtmChart}
@@ -35,7 +36,22 @@ export const Portfolios = () => {
                             <h3>Green Tiger Markets Trading Chart</h3>
                           </div>
                         </Col>
-                        <Col lg={12} xl={6}>
+                      </Row>
+                      <Row>
+                        <Col lg={12} xl={12}>
+                          <div data-aos="flip-left" className="animation-div">
+                            <img
+                              src={gtmPlatform}
+                              alt="gtm"
+                              width="90%"
+                              height="80%"
+                            ></img>
+                            <h3>Green Tiger Markets Trading Platform</h3>
+                          </div>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col lg={12} xl={12}>
                           <div data-aos="flip-right" className="animation-div">
                             <a href="https://play.google.com/store/apps/details?id=org.devlive.app">
                               {/* <div className="middle"> */}
@@ -49,7 +65,7 @@ export const Portfolios = () => {
                               <div className="text">Click Me</div>
                               {/* </div> */}
                             </a>
-                            <h3>UNDP</h3>
+                            <h3>DevLIVE</h3>
                           </div>
                         </Col>
                       </Row>

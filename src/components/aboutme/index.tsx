@@ -17,7 +17,7 @@ export const AboutMe = () => {
                     <Title title={"ABOUT"}></Title>
                     <Card.Body>
                       <Row>
-                        <Col xs={10}>
+                        <Col xs={12} md={12} lg={8}>
                           <div data-aos="fade-left" className="animation-div">
                             <span className="introductory">
                               Hi, I'm Nathaniel Santiago. Nice to meet you.

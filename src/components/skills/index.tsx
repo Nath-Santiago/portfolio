@@ -15,6 +15,7 @@ import photoshop from "../../assets/icons/photoshop.svg";
 import postgresql from "../../assets/icons/postgresql.svg";
 import ibmace from "../../assets/icons/ibmace.svg";
 import go from "../../assets/icons/go.svg";
+import docker from "../../assets/icons/docker.svg";
 import { Element } from "react-scroll";
 import "./styles.scss";
 
@@ -224,6 +225,20 @@ export const Skills = () => {
                               height="180"
                             ></img>
                             <h3>GOLANG</h3>
+                          </div>
+                        </Col>
+                      </Row>
+                      {/* seventh row */}
+                      <Row>
+                        <Col md={12} lg={6}>
+                          <div data-aos="fade-up" className="animation-div">
+                            <img
+                              src={docker}
+                              alt="Docker"
+                              width="180"
+                              height="180"
+                            ></img>
+                            <h3>DOCKER</h3>
                           </div>
                         </Col>
                       </Row>
