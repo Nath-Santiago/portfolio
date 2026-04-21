@@ -1,0 +1,214 @@
+@import '../../assets/styles/colors.scss';
+
+#experience {
+  height: auto;
+  width: 100%;
+
+  .section-shell {
+    width: 85%;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $text-primary;
+
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .section-body {
+    padding-bottom: 16px;
+  }
+
+  .section-content {
+    padding: 8px 0 0;
+  }
+
+  .section-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .section-copy {
+    margin-bottom: 30px;
+    max-width: 700px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: $text-secondary;
+  }
+
+  .timeline {
+    display: grid;
+    gap: 22px;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 32px minmax(170px, 220px) minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .timeline-rail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  .timeline-rail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -22px;
+    width: 2px;
+    background: linear-gradient(
+      180deg,
+      rgba($primary-theme-color-rgb, 0.5),
+      rgba($primary-theme-color-rgb, 0.12)
+    );
+  }
+
+  .timeline-item:last-child .timeline-rail::before {
+    bottom: 0;
+  }
+
+  .timeline-dot {
+    position: relative;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+    border: 3px solid $white900;
+    border-radius: 50%;
+    background: $primary-theme-color-hex;
+    box-shadow: 0 0 0 6px rgba($primary-theme-color-rgb, 0.14);
+  }
+
+  .timeline-period {
+    padding-top: 8px;
+
+    span {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba($primary-theme-color-rgb, 0.12);
+      color: $text-primary;
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  }
+
+  .timeline-content {
+    padding: 6px 0 20px;
+    border-bottom: 1px solid rgba($primary-theme-color-rgb, 0.14);
+  }
+
+  .timeline-item:last-child .timeline-content {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .timeline-role {
+    display: block;
+    margin-bottom: 4px;
+    color: $text-primary;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .timeline-company {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: $link-color;
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .timeline-summary {
+    margin-bottom: 14px;
+    color: $text-secondary;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .timeline-highlights {
+    margin: 0;
+    padding-left: 20px;
+    color: $text-secondary;
+    font-size: 0.98rem;
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .timeline-skills {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba($primary-theme-color-rgb, 0.18);
+    line-height: 1.8;
+  }
+
+  .timeline-skills-title {
+    margin-right: 8px;
+    color: #9000ff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    // letter-spacing: 0.08em;
+    // text-transform: uppercase;
+  }
+
+  .timeline-skills-text {
+    color: #ffd98f;
+    text-shadow: 0 0 18px rgba(255, 202, 107, 0.14);
+    font-size: 0.96rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 991px) {
+    .timeline-item {
+      grid-template-columns: 32px minmax(0, 1fr);
+    }
+
+    .timeline-period {
+      grid-column: 2;
+      padding-top: 0;
+    }
+
+    .timeline-content {
+      grid-column: 2;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section-content {
+      padding-top: 4px;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+    }
+
+    .timeline-item {
+      gap: 14px;
+    }
+
+    .timeline-content {
+      padding: 4px 0 18px;
+    }
+  }
+}

@@ -3,10 +3,11 @@ import './App.scss';
 // import { Container } from 'react-bootstrap';
 import { NavBar } from './components/navbar';
 import { Body } from './components/myself';
-import { Skills } from './components/skills';
+import { Experience } from './components/experience';
+import { CoreStrengths } from './components/corestrengths';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Portfolios } from './components/porfolios';
+import { Projects } from './components/porfolios';
 import { ContactMe } from './components/contactme';
 import { Footer } from './components/footer/footer';
 import { AboutMe } from './components/aboutme';
@@ -19,8 +20,9 @@ function App() {
         <NavBar></NavBar>
         <Body></Body>
         <AboutMe></AboutMe>
-        <Skills></Skills>
-        <Portfolios></Portfolios>
+        <Experience></Experience>
+        <CoreStrengths></CoreStrengths>
+        <Projects></Projects>
         <ContactMe></ContactMe>
         <Footer></Footer>
       {/* </Container> */}

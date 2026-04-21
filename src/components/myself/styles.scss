@@ -1,47 +1,247 @@
 @import '../../assets//styles/colors.scss';
 
 #body-container {
+  width: 100%;
+  height: 830px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center 72%, rgba($primary-theme-color-rgb, 0.48), transparent 18%),
+    radial-gradient(circle at 20% 10%, rgba($primary-theme-color-rgb, 0.18), transparent 26%),
+    radial-gradient(circle at 80% 18%, rgba($accent-glow, 0.12), transparent 22%),
+    linear-gradient(180deg, rgba($surface-hero, 0.96), rgba($surface-background, 0.98));
+
+  .myself {
+    position: absolute;
     width: 100%;
-    height: 830px;
-    overflow: hidden;
-    .myself {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    .my-portrait {
       display: flex;
+      align-items: center;
       justify-content: center;
-      flex-flow: column;
-      .my-portrait {
-        width: auto;
-        height: 350px;
-        padding: 16px;
-        z-index: 500;
-        img {
-          width: 100%;
-          height: 100%;
-        }
+      width: auto;
+      height: 350px;
+      padding: 16px;
+      z-index: 500;
+      img {
+        width: 100%;
+        height: 100%;
       }
-      .my-portrait,
-      .type-animation,
-      .intro {
-        margin: 0 auto;
+
+      .portrait-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        transition:
+          transform 0.55s ease,
+          opacity 0.45s ease,
+          filter 0.45s ease;
       }
-      .job-description {
-        font-weight: 700;
-        font-size: 2rem;
+
+      .portrait-image-primary {
+        z-index: 2;
+        object-fit: contain;
+        background: linear-gradient(
+          180deg,
+          rgba($surface-card-alt, 0.94),
+          rgba($surface-background, 0.98)
+        );
+        filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.42));
+      }
+
+      .portrait-image-secondary {
+        z-index: 1;
+        object-fit: cover;
+        transform: translateX(-100%);
+        filter: saturate(1.02) contrast(1.02);
       }
     }
-    .particles {
+
+    .my-portrait:hover {
+      .portrait-image-primary {
+        transform: translateX(100%);
+        opacity: 0.18;
+      }
+
+      .portrait-image-secondary {
+        transform: translateX(0);
+      }
+    }
+
+    .my-portrait,
+    .type-animation,
+    .intro {
+      margin: 0 auto;
+    }
+
+    .job-description {
+      color: $text-primary;
+      font-weight: 700;
+      font-size: 2rem;
+      text-shadow: 0 0 20px rgba($primary-theme-color-rgb, 0.22);
+    }
+  }
+
+  .particles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .liquid-ether {
       position: relative;
       width: 100%;
       height: 100%;
-      #tsparticles {
-        position: relative;
-        height: 100%;
-      }
-      .atup {
-        position: relative;
-        height: 100%;
-      }
+      filter: saturate(1.1);
+    }
+
+    .ether-blob,
+    .ether-wave,
+    .ether-haze,
+    .ether-grid {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .ether-blob {
+      border-radius: 50%;
+      mix-blend-mode: screen;
+      filter: blur(14px);
+      opacity: 0.7;
+      animation: etherFloat 18s ease-in-out infinite alternate;
+    }
+
+    .ether-blob-one {
+      top: 8%;
+      left: -4%;
+      width: 32rem;
+      height: 32rem;
+      background:
+        radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.28), transparent 28%),
+        radial-gradient(circle, rgba($primary-theme-color-rgb, 0.56), rgba($accent-glow, 0.08) 72%, transparent 100%);
+    }
+
+    .ether-blob-two {
+      top: 12%;
+      right: -2%;
+      width: 24rem;
+      height: 24rem;
+      background:
+        radial-gradient(circle at 55% 40%, rgba(255, 255, 255, 0.2), transparent 24%),
+        radial-gradient(circle, rgba($accent-glow, 0.34), rgba(110, 43, 205, 0.08) 72%, transparent 100%);
+      animation-duration: 21s;
+    }
+
+    .ether-blob-three {
+      bottom: 2%;
+      left: 14%;
+      width: 28rem;
+      height: 28rem;
+      background:
+        radial-gradient(circle at 48% 46%, rgba(255, 255, 255, 0.16), transparent 24%),
+        radial-gradient(circle, rgba($primary-theme-color-rgb, 0.28), rgba(76, 24, 145, 0.08) 72%, transparent 100%);
+      animation-duration: 24s;
+    }
+
+    .ether-blob-four {
+      bottom: -8%;
+      right: 8%;
+      width: 26rem;
+      height: 26rem;
+      background:
+        radial-gradient(circle at 42% 38%, rgba(255, 202, 107, 0.14), transparent 22%),
+        radial-gradient(circle, rgba(96, 35, 170, 0.26), rgba($surface-background, 0.02) 74%, transparent 100%);
+      animation-duration: 26s;
+    }
+
+    .ether-wave {
+      left: 50%;
+      width: 78%;
+      border-radius: 45% 55% 50% 50%;
+      transform: translateX(-50%);
+      mix-blend-mode: screen;
+      filter: blur(12px);
+    }
+
+    .ether-wave-one {
+      bottom: 8%;
+      height: 18rem;
+      background: linear-gradient(
+        90deg,
+        rgba(24, 10, 48, 0.04),
+        rgba($primary-theme-color-rgb, 0.22),
+        rgba($accent-glow, 0.16),
+        rgba(24, 10, 48, 0.04)
+      );
+      animation: etherWave 17s ease-in-out infinite;
+    }
+
+    .ether-wave-two {
+      bottom: 18%;
+      height: 12rem;
+      background: linear-gradient(
+        90deg,
+        rgba(24, 10, 48, 0.02),
+        rgba($accent-glow, 0.14),
+        rgba($primary-theme-color-rgb, 0.2),
+        rgba(24, 10, 48, 0.02)
+      );
+      animation: etherWave 22s ease-in-out infinite reverse;
+    }
+
+    .ether-haze {
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 58%, rgba($primary-theme-color-rgb, 0.18), transparent 24%),
+        radial-gradient(circle at 30% 24%, rgba($accent-glow, 0.12), transparent 20%),
+        radial-gradient(circle at 70% 22%, rgba($primary-theme-color-rgb, 0.1), transparent 18%);
+      backdrop-filter: blur(18px);
+      opacity: 0.95;
+    }
+
+    .ether-grid {
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 120px 120px;
+      mask-image: radial-gradient(circle at center, black 25%, transparent 78%);
+      opacity: 0.22;
     }
   }
+
+  @keyframes etherFloat {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+      transform: translate3d(1.5rem, -1.25rem, 0) scale(1.08);
+    }
+
+    100% {
+      transform: translate3d(-1rem, 1.75rem, 0) scale(0.94);
+    }
+  }
+
+  @keyframes etherWave {
+    0% {
+      transform: translateX(-50%) translateY(0) scaleX(1);
+      border-radius: 42% 58% 51% 49%;
+    }
+
+    50% {
+      transform: translateX(-50%) translateY(1rem) scaleX(1.06);
+      border-radius: 58% 42% 46% 54%;
+    }
+
+    100% {
+      transform: translateX(-50%) translateY(-0.5rem) scaleX(0.98);
+      border-radius: 46% 54% 57% 43%;
+    }
+  }
+}

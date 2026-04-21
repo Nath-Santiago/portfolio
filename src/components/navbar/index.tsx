@@ -31,7 +31,19 @@ export const NavBar = () => {
             <Nav.Link>
               <Link
                 activeClass="active"
-                to="skills"
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={-75}
+                duration={1500}
+              >
+                EXPERIENCE
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="core-strengths"
                 spy={true}
                 smooth={true}
                 offset={-75}
@@ -43,13 +55,13 @@ export const NavBar = () => {
             <Nav.Link>
               <Link
                 activeClass="active"
-                to="portfolios"
+                to="projects"
                 spy={true}
                 smooth={true}
                 offset={-75}
                 duration={1500}
               >
-                PORTFOLIOS
+                PROJECTS
               </Link>
             </Nav.Link>
             <Nav.Link>

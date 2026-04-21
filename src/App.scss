@@ -28,17 +28,29 @@
 .App {
   font-family: $Tittilum-Web;
   font-size: 20px;
-  background: $white900;
+  color: $text-primary;
+  background:
+    radial-gradient(circle at top left, rgba($primary-theme-color-rgb, 0.22), transparent 28%),
+    radial-gradient(circle at top right, rgba($accent-glow, 0.12), transparent 24%),
+    linear-gradient(180deg, #05050a 0%, #09070f 32%, #07060c 100%);
   width: 100%;
+  min-height: 100vh;
 
   .container {
     padding: 0;
   }
   .card {
-    background: transparent;
+    background:
+      linear-gradient(180deg, rgba($surface-card-alt, 0.96), rgba($surface-card, 0.98));
     margin: 25px auto;
     color: $primary-theme-color-hex;
-    border: none;
+    border: 1px solid $border-soft;
+    border-radius: 28px;
+    box-shadow:
+      0 28px 80px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 0 0 1px rgba($primary-theme-color-rgb, 0.03);
+    overflow: hidden;
   }
   // .main-container {
   //   padding: 0;

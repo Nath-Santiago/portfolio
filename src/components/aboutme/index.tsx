@@ -1,10 +1,23 @@
 import React from "react";
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Title } from "../title";
 import { Element } from "react-scroll";
 import "./styles.scss";
 
 export const AboutMe = () => {
+  const today = new Date();
+  const careerStartDate = new Date(2019, 6, 1);
+  let experienceYears =
+    today.getFullYear() - careerStartDate.getFullYear();
+
+  if (
+    today.getMonth() < careerStartDate.getMonth() ||
+    (today.getMonth() === careerStartDate.getMonth() &&
+      today.getDate() < careerStartDate.getDate())
+  ) {
+    experienceYears -= 1;
+  }
+
   return (
     <div id="about-me">
       <Element name="about-me" className="element">
@@ -13,21 +26,24 @@ export const AboutMe = () => {
             <Row>
               <Col>
                 <div data-aos="fade-up">
-                  <Card style={{ width: "85%" }}>
+                  <div className="section-shell">
                     <Title title={"ABOUT"}></Title>
-                    <Card.Body>
+                    <div className="section-body">
                       <Row>
                         <Col xs={12} md={12} lg={8}>
                           <div data-aos="fade-left" className="animation-div">
                             <span className="introductory">
-                              Hi, I'm Nathaniel Santiago. Nice to meet you.
+                              Hi, I'm Nathaniel Santiago. Welcome to my corner
+                              of the web.
                             </span>
                             <br></br>
                             <span className="message">
-                              I am a software engineer with over three years of
-                              experience in the industry. I am thrilled to have
-                              you here, and I hope that this website will give
-                              you a glimpse into my skills, passion, and work.
+                              I'm a software engineer with {experienceYears}+
+                              years of professional experience building
+                              reliable, user-focused solutions. This site is a
+                              snapshot of the work I care about, the skills
+                              I've developed, and the passion I bring to every
+                              project I take on.
                               {/* I am an alumna of the esteemed Bulacan State
                               University where I completed Bachelor of Science
                               in Information Technology class of 2019.
@@ -64,12 +80,12 @@ export const AboutMe = () => {
                             </span>
                             <br />
                             <br></br>
-                            <i>
+                            {/* <i>
                               <strong>
-                                "Living, learning, & leveling up one day at a
-                                time."
+                                "Living, learning, and getting better every
+                                day."
                               </strong>
-                            </i>
+                            </i> */}
                             {/* <span className="message">
                               <i>
                                 "I can do all things through Christ who
@@ -80,8 +96,8 @@ export const AboutMe = () => {
                           </div>
                         </Col>
                       </Row>
-                    </Card.Body>
-                  </Card>
+                    </div>
+                  </div>
                 </div>
               </Col>
             </Row>

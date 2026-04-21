@@ -20,12 +20,12 @@ export const Body = () => {
             loop={true}
             onFinishedTyping={() => {
               jobDesc === 'Software Engineer'
-                ? setJobDesc('Front-end Developer')
+                ? setJobDesc('Full Stack Developer')
                 : setJobDesc('Software Engineer');
             }}
           >
             <span className="job-description">{jobDesc}</span>
-            <Typing.Backspace delay={3000} count={19} />
+            <Typing.Backspace delay={3000} count={20} />
           </Typing>
         </div>
       </div>
@@ -71,7 +71,7 @@ export const Body = () => {
                 color: '#9000ff',
                 distance: 150,
                 enable: false,
-                opacity: 0.5,
+                opacity: 0.8,
                 width: 1,
               },
               collisions: {
@@ -93,7 +93,7 @@ export const Body = () => {
                 value: 40,
               },
               opacity: {
-                value: 0.5,
+                value: 0.3,
               },
               shape: {
                 type: ["circle", "square", "triangle"]

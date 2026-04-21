@@ -1,11 +1,21 @@
 
-$primary-theme-color-hex: #9000ff;
-$primary-theme-color-rgb: rgb(144, 0, 255);
+$primary-theme-color-hex: #9d39ff;
+$primary-theme-color-rgb: rgb(157, 57, 255);
+
+$accent-glow: #c56cff;
+$surface-background: #07060c;
+$surface-hero: #0b0912;
+$surface-card: #12101b;
+$surface-card-alt: #171321;
+$text-primary: #f5f1ff;
+$text-secondary: #b9b1cc;
+$border-soft: rgba($primary-theme-color-rgb, 0.2);
+$border-strong: rgba($primary-theme-color-rgb, 0.4);
 
 $white900: #ffffff;
-$black900: #000000;
-$link-color: #00e7ff;
+$black900: #0b0a11;
+$link-color: #d7bbff;
 
-$scrollbar-track: #f1f1f1;
-$scrollbar-thumb-hover: #555;
-$scrollbar-thumb: #888;
+$scrollbar-track: #120f1d;
+$scrollbar-thumb-hover: #8d46e8;
+$scrollbar-thumb: #4c277e;
