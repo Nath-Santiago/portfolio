@@ -67,6 +67,18 @@ export const NavBar = () => {
             <Nav.Link>
               <Link
                 activeClass="active"
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={-75}
+                duration={1500}
+              >
+                EDUCATION
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                activeClass="active"
                 to="contact-me"
                 spy={true}
                 smooth={true}

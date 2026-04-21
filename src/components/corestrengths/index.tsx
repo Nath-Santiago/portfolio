@@ -27,6 +27,8 @@ const coreStrengths = [
       "ESQL",
       "IBM App Connect Enterprise",
       "NetSuite ERP",
+      "AWS",
+      "GCP"
     ],
   },
   {
@@ -38,6 +40,8 @@ const coreStrengths = [
       "Bug Investigation",
       "Manual and Automation Testing",
       "Agile / Kanban",
+      "JIRA",
+      "Confluence"
     ],
   },
 ];

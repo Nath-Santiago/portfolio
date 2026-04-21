@@ -3,7 +3,7 @@ import Particles from 'react-tsparticles';
 import myPortrait from '../../assets/icons/portrait.svg';
 import './styles.scss';
 
-const jobDescriptions = ['Software Engineer', 'Full Stack Developer'];
+const jobDescriptions = ['Software Engineer', 'Full Stack Developer', 'QA Engineer'];
 
 export const Body = () => {
   const [jobIndex, setJobIndex] = useState(0);

@@ -3,6 +3,7 @@ import './App.scss';
 // import { Container } from 'react-bootstrap';
 import { NavBar } from './components/navbar';
 import { Body } from './components/myself';
+import { Education } from './components/education';
 import { Experience } from './components/experience';
 import { CoreStrengths } from './components/corestrengths';
 import AOS from 'aos';
@@ -23,6 +24,7 @@ function App() {
         <Experience></Experience>
         <CoreStrengths></CoreStrengths>
         <Projects></Projects>
+        <Education></Education>
         <ContactMe></ContactMe>
         <Footer></Footer>
       {/* </Container> */}

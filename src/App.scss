@@ -1,7 +1,5 @@
-@import 'bootstrap/scss/bootstrap';
-
-@import './assets/styles/colors.scss';
-@import './assets/styles/fonts.scss';
+@use './assets/styles/colors' as *;
+@use './assets/styles/fonts' as *;
 
 // global
 .animation-div .aos-init {
