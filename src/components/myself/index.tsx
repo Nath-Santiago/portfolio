@@ -1,11 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Particles from 'react-tsparticles';
-import Typing from 'react-typing-animation';
 import myPortrait from '../../assets/icons/portrait.svg';
 import './styles.scss';
 
+const jobDescriptions = ['Software Engineer', 'Full Stack Developer'];
+
 export const Body = () => {
-  const [jobDesc, setJobDesc] = useState('Software Engineer');
+  const [jobIndex, setJobIndex] = useState(0);
+  const [jobDesc, setJobDesc] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentJob = jobDescriptions[jobIndex];
+    const typingDelay = isDeleting ? 70 : 110;
+    const pauseDelay = 1800;
+
+    const timer = window.setTimeout(() => {
+      if (!isDeleting && jobDesc.length < currentJob.length) {
+        setJobDesc(currentJob.slice(0, jobDesc.length + 1));
+        return;
+      }
+
+      if (!isDeleting && jobDesc.length === currentJob.length) {
+        setIsDeleting(true);
+        return;
+      }
+
+      if (isDeleting && jobDesc.length > 0) {
+        setJobDesc(currentJob.slice(0, jobDesc.length - 1));
+        return;
+      }
+
+      setIsDeleting(false);
+      setJobIndex((currentIndex) => (currentIndex + 1) % jobDescriptions.length);
+    }, !isDeleting && jobDesc.length === currentJob.length ? pauseDelay : typingDelay);
+
+    return () => {
+      window.clearTimeout(timer);
+    };
+  }, [isDeleting, jobDesc, jobDescriptions, jobIndex]);
+
   return (
     <div id="body-container">
       <div className="myself">
@@ -16,17 +50,7 @@ export const Body = () => {
           <span className="job-description">Hi! I'm Nath</span>
         </div>
         <div className="type-animation">
-          <Typing
-            loop={true}
-            onFinishedTyping={() => {
-              jobDesc === 'Software Engineer'
-                ? setJobDesc('Full Stack Developer')
-                : setJobDesc('Software Engineer');
-            }}
-          >
-            <span className="job-description">{jobDesc}</span>
-            <Typing.Backspace delay={3000} count={20} />
-          </Typing>
+          <span className="job-description job-description-typed">{jobDesc}</span>
         </div>
       </div>
       <div className="particles">

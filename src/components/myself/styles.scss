@@ -84,6 +84,23 @@
       font-size: 2rem;
       text-shadow: 0 0 20px rgba($primary-theme-color-rgb, 0.22);
     }
+
+    .job-description-typed {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+    }
+
+    .job-description-typed::after {
+      content: '';
+      width: 2px;
+      height: 1.9rem;
+      margin-left: 0.35rem;
+      border-radius: 999px;
+      background: rgba($accent-glow, 0.95);
+      box-shadow: 0 0 18px rgba($accent-glow, 0.45);
+      animation: caretBlink 0.9s steps(1) infinite;
+    }
   }
 
   .particles {
@@ -242,6 +259,18 @@
     100% {
       transform: translateX(-50%) translateY(-0.5rem) scaleX(0.98);
       border-radius: 46% 54% 57% 43%;
+    }
+  }
+
+  @keyframes caretBlink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+
+    50%,
+    100% {
+      opacity: 0.15;
     }
   }
 }
