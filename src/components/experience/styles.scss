@@ -207,8 +207,27 @@
       gap: 14px;
     }
 
+    .timeline-period span {
+      font-size: 0.84rem;
+      padding: 7px 12px;
+    }
+
+    .timeline-role {
+      font-size: 1.08rem;
+    }
+
+    .timeline-company {
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+    }
+
     .timeline-content {
       padding: 4px 0 18px;
+    }
+
+    .timeline-skills {
+      margin-top: 16px;
+      padding-top: 14px;
     }
   }
 }

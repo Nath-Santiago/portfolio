@@ -58,6 +58,7 @@
     color: $text-primary;
     background: rgba($primary-theme-color-rgb, 0.08);
     font-weight: 600;
+    text-align: center;
     text-decoration: none;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.04),
@@ -110,6 +111,11 @@
 
     .contact-actions {
       grid-template-columns: 1fr;
+    }
+
+    .contact-action {
+      min-height: 52px;
+      padding: 13px 16px;
     }
   }
 }

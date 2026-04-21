@@ -25,7 +25,7 @@
 
 .App {
   font-family: $Tittilum-Web;
-  font-size: 20px;
+  font-size: clamp(16px, 1.2vw + 12px, 20px);
   color: $text-primary;
   background:
     radial-gradient(circle at top left, rgba($primary-theme-color-rgb, 0.22), transparent 28%),
@@ -33,10 +33,17 @@
     linear-gradient(180deg, #05050a 0%, #09070f 32%, #07060c 100%);
   width: 100%;
   min-height: 100vh;
+  overflow-x: clip;
 
   .container {
     padding: 0;
   }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
   .card {
     background:
       linear-gradient(180deg, rgba($surface-card-alt, 0.96), rgba($surface-card, 0.98));
@@ -54,6 +61,53 @@
   //   padding: 0;
   //   height: auto;
   // }
+}
+
+#about-me .section-shell,
+#education .section-shell,
+#experience .section-shell,
+#core-strengths .section-shell,
+#projects .section-shell,
+#contact-me .section-shell {
+  width: min(85%, 1120px);
+}
+
+#about-me .section-content,
+#education .section-content,
+#experience .section-content,
+#core-strengths .section-content,
+#projects .section-content,
+#contact-me .section-content {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 991px) {
+  #about-me .section-shell,
+  #education .section-shell,
+  #experience .section-shell,
+  #core-strengths .section-shell,
+  #projects .section-shell,
+  #contact-me .section-shell {
+    width: min(90%, 960px);
+    margin-bottom: 84px;
+  }
+}
+
+@media (max-width: 767px) {
+  #about-me .section-shell,
+  #education .section-shell,
+  #experience .section-shell,
+  #core-strengths .section-shell,
+  #projects .section-shell,
+  #contact-me .section-shell {
+    width: calc(100% - 32px);
+    margin-bottom: 72px;
+  }
+
+  .App .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 // image bounce onhover

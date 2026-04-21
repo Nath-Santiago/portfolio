@@ -23,20 +23,39 @@
     overflow: hidden;
 
     .introductory {
-      font-size: 36px;
+      display: block;
+      font-size: clamp(1.9rem, 5vw, 2.25rem);
       font-weight: 700;
       width: 100%;
       color: $text-primary;
+      line-height: 1.2;
     }
 
     .message {
-      text-align: justify;
+      display: inline-block;
+      max-width: 64ch;
+      text-align: left;
       line-height: 1.6;
       color: $text-secondary;
 
       a {
         color: $link-color;
       }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section-shell {
+      margin-bottom: 72px;
+    }
+
+    .col-12 .introductory {
+      font-size: 1.8rem;
+    }
+
+    .col-12 .message {
+      font-size: 0.98rem;
+      line-height: 1.75;
     }
   }
 }

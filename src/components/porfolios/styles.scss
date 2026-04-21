@@ -103,6 +103,7 @@
     color: $text-secondary;
     font-size: 1rem;
     line-height: 1.8;
+    overflow-wrap: anywhere;
   }
 
   @media (max-width: 767px) {
@@ -120,6 +121,11 @@
 
     .project-title {
       font-size: 1.3rem;
+    }
+
+    .project-details {
+      font-size: 0.96rem;
+      line-height: 1.7;
     }
   }
 }

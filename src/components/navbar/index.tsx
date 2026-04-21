@@ -82,7 +82,7 @@ export const NavBar = () => {
                 to="contact-me"
                 spy={true}
                 smooth={true}
-                offset={-75}
+                offset={200}
                 duration={1500}
               >
                 CONTACT

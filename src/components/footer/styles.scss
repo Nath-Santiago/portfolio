@@ -1,16 +1,18 @@
 @use '../../assets/styles/colors' as *;
 
 #footer {
-  padding: 10px 0px;
+  padding: 18px 16px 24px;
   .row {
     display: flex;
     justify-content: center;
     .col-lg-9 {
       display: flex;
       justify-content: center;
+      text-align: center;
       span {
         color: $text-secondary;
         font-size: 14px;
+        line-height: 1.6;
       }
     }
   }
