@@ -47,7 +47,7 @@ export const Body = () => {
           <img src={myPortrait} alt="portrait"></img>
         </div>
         <div className="intro">
-          <span className="job-description">Hi! I'm Nath</span>
+          <span className="job-description">Hi, I'm Nathan!</span>
         </div>
         <div className="type-animation">
           <span className="job-description job-description-typed">{jobDesc}</span>

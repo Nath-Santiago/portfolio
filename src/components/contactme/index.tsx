@@ -8,7 +8,7 @@ import "./styles.scss";
 type ContactLink = {
   label: string;
   href: string;
-  download?: boolean;
+  download?: string;
   isPrimary?: boolean;
 };
 
@@ -29,7 +29,7 @@ const contactLinks: ContactLink[] = [
   {
     label: "Download CV",
     href: cvFile,
-    download: true,
+    download: "Nathaniel_Santiago_CV.pdf",
   },
 ];
 
