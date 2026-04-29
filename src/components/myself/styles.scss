@@ -2,7 +2,12 @@
 
 #body-container {
   width: 100%;
-  min-height: 830px;
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  height: 100vh;
+  height: 100svh;
+  height: 100dvh;
   overflow: hidden;
   position: relative;
   background:
@@ -286,8 +291,6 @@
   }
 
   @media (max-width: 991px) {
-    min-height: 760px;
-
     .myself {
       padding-top: 112px;
       padding-bottom: 56px;
@@ -306,8 +309,6 @@
   }
 
   @media (max-width: 767px) {
-    min-height: 680px;
-
     .myself {
       padding: 104px 16px 44px;
     }
@@ -345,8 +346,6 @@
   }
 
   @media (max-width: 480px) {
-    min-height: 620px;
-
     .job-description {
       font-size: 1.2rem;
     }

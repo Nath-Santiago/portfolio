@@ -33,7 +33,7 @@ export const AboutMe = () => {
                         <Col xs={12} md={12} lg={8}>
                           <div data-aos="fade-left" className="animation-div">
                             <span className="introductory">
-                              Hi, I'm Nathaniel Santiago. Welcome to my corner
+                              Hello, I'm Nathaniel Santiago. Welcome to my corner
                               of the web.
                             </span>
                             <br></br>

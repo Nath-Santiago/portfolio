@@ -15,6 +15,17 @@ const coreStrengths = [
     ],
   },
   {
+    title: "Artificial Intelligence (AI)",
+    items: [
+      "Generative AI",
+      "Agentic AI",
+      "Oracle Code Assist",
+      "Cline",
+      "Codex",
+      "Prompt Engineering"
+    ],
+  },
+  {
     title: "Frontend & UI",
     items: ["React", "Redux", "Angular", "HTML", "CSS"],
   },

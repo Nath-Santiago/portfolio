@@ -55,7 +55,7 @@ export const Body = () => {
       </div>
       <div className="particles">
         <Particles
-          height="100"
+          height="100%"
           options={{
             fpsLimit: 60,
             interactivity: {
