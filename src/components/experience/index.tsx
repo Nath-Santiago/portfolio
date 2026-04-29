@@ -24,6 +24,10 @@ const experiences = [
       "Playwright",
       "Jest",
       "Karma",
+      "Generative AI",
+      "Agentic AI",
+      "AI Agents",
+      "Prompt Engineering",
     ],
   },
   {

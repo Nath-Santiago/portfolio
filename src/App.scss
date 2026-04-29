@@ -28,8 +28,8 @@
   font-size: clamp(16px, 1.2vw + 12px, 20px);
   color: $text-primary;
   background:
-    radial-gradient(circle at top left, rgba($primary-theme-color-rgb, 0.22), transparent 28%),
-    radial-gradient(circle at top right, rgba($accent-glow, 0.12), transparent 24%),
+    // radial-gradient(circle at top left, rgba($primary-theme-color-rgb, 0.22), transparent 28%),
+    // radial-gradient(circle at top right, rgba($accent-glow, 0.12), transparent 24%),
     linear-gradient(180deg, #05050a 0%, #09070f 32%, #07060c 100%);
   width: 100%;
   min-height: 100vh;
