@@ -94,27 +94,27 @@ export const Body = () => {
               links: {
                 color: '#9000ff',
                 distance: 150,
-                enable: false,
-                opacity: 0.8,
-                width: 1,
+                enable: true,
+                opacity: 0.2,
+                // width: 5,
               },
               collisions: {
-                enable: false,
+                enable: true,
               },
               move: {
                 direction: 'none',
                 enable: true,
                 outMode: 'bounce',
                 random: true,
-                speed: 4,
-                straight: false,
+                speed: 2,
+                straight: true,
               },
               number: {
                 density: {
                   enable: true,
                   value_area: 800,
                 },
-                value: 40,
+                value: 30,
               },
               opacity: {
                 value: 0.3,
@@ -124,7 +124,7 @@ export const Body = () => {
               },
               size: {
                 random: true,
-                value: 10,
+                value: 12,
               },
             },
             detectRetina: true,
