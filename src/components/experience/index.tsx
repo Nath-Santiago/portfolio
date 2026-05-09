@@ -2,11 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Element } from "react-scroll";
 import { Title } from "../title";
+import netsuite from "../../assets/icons/oracleNetsuite.svg";
+import labs from "../../assets/icons/98labs.png";
 import "./styles.scss";
 
 const experiences = [
   {
-    role: "Software Engineer / One Engineer",
+    role: "Software Engineer / QA Engineer",
     company: "Oracle NetSuite",
     period: "June 2024 - May 2026",
     summary:
@@ -29,6 +31,8 @@ const experiences = [
       "AI Agents",
       "Prompt Engineering",
     ],
+    companyLogo: netsuite,
+    logoAlt: "Oracle Netsuite",
   },
   {
     role: "Middleware Developer",
@@ -46,6 +50,8 @@ const experiences = [
       "IBM App Connect Enterprise",
       "ESQL",
     ],
+    companyLogo: labs,
+    companyLogoAlt: "98Labs, Inc"
   },
   {
     role: "Fullstack Developer",
@@ -68,6 +74,8 @@ const experiences = [
       "GraphQL",
       "PostgreSQL",
     ],
+    companyLogo: labs,
+    companyLogoAlt: "98Labs, Inc"
   },
   {
     role: "Front-End Developer",
@@ -81,6 +89,8 @@ const experiences = [
       "Maintained and updated the company website.",
     ],
     skills: ["Javascript", "Typescript", "Angular", "ParseAPI"],
+    companyLogo: labs,
+    companyLogoAlt: "98Labs, Inc"
   },
 ];
 
@@ -128,7 +138,12 @@ export const Experience = () => {
                                       {experience.role}
                                     </span>
                                     <span className="timeline-company">
-                                      {experience.company}
+                                      {experience.companyLogo ? <img
+                                        src={experience.companyLogo}
+                                        alt={experience.logoAlt}
+                                        width="180"
+                                        height="40"
+                                      /> : experience.company}
                                     </span>
                                     <p className="timeline-summary">
                                       {experience.summary}
